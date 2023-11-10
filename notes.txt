@@ -28,4 +28,22 @@ content inside a react element is referred as `children`
 _____________________
 10/11/23:
 
+webpack: Its a bundler, used to make the browser understand the react app code 
+- fetches node modules
+- minifies converted
+- css file reading
+- compiling code
+- memory management
 
+ES6 version is not understood by the browser, ES5 will only be understood 
+ - babel will be used here in this camelCase
+ - babel will transpile the ES6 code to ES5
+ - {
+        "presets": ["@babel/preset-env", "@babel/preset-react"]
+    }
+    - "@babel/preset-env" : js code will get understood by the browser
+    - "@babel/preset-react": react app code will get understood by the browser
+
+HMR: Hot Module Reload - for example if you make any change in the js file / html / css the UI gets updated swiftly 
+
+webpack will generate the bundle.js and injects it into index.html - you can see the developer tool while the app is running

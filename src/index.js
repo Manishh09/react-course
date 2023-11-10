@@ -6,6 +6,10 @@ rootEl.appendChild(pEl)
 */
 
 /** using react */ 
+// import react packages
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 
 // create root element named div
 const div = React.createElement("div", {className: "root"}, "Hello, Welcome to React Course");
