@@ -1,0 +1,31 @@
+2/11/23:
+____________
+React: a javascript library, can customize the structure unlike the frameworks like Angular where in a mvc approach is followed under the guidelines
+
+React - For website and mobile development
+
+React DOM - websites
+
+CDN Links:
+
+    This is why we will have two CDN Links which we basically import in index.html file to be get the React and React DOM objects availability
+
+    Must be imported before we use the functionalities of React and React DOM 
+
+Two ways to create an element in React:
+
+    using  React.createElement('<your_element>', {<attributes>}, "<content>")
+                        <attributes> -> camelCase
+    using  JSX
+
+JSX:
+ - html like structure in js
+ - const ele = <div></div>
+ - gets converted into react.createElement form and renders into dom
+__________________________________________________________________
+3/11/23:
+content inside a react element is referred as `children`
+_____________________
+10/11/23:
+
+
