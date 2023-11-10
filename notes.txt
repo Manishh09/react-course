@@ -47,3 +47,4 @@ ES6 version is not understood by the browser, ES5 will only be understood
 HMR: Hot Module Reload - for example if you make any change in the js file / html / css the UI gets updated swiftly 
 
 webpack will generate the bundle.js and injects it into index.html - you can see the developer tool while the app is running
+____________________________________
