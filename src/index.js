@@ -1,4 +1,4 @@
-/* Traditional JS way
+/* Traditional JS way : Using CDN
 const rootEl = document.getElementById("root");
 const pEl = document.createElement("p");
 pEl.innerText = "Welcome to React Learning"
@@ -8,7 +8,7 @@ rootEl.appendChild(pEl)
 /** using react */ 
 // import react packages
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 
 // create root element named div
@@ -36,4 +36,34 @@ const div2 = React.createElement("div", {className: "root2"}, [p1, p2]);
 const root2 = ReactDOM.createRoot(document.getElementById("root2"))
 // render the created element
 root2.render(div2);
+
+/**************** Using JSX  *************************/
+
+const apiResponse = "I am a div element, from api response";
+const divEL = <div className='text'>{apiResponse}</div>
+
+// conditional rendering
+const isMorning = true;
+const data = isMorning ? "Morning data" : "Evening data"
+// click method
+const handleClick = (state)=> console.log("I am clicked:", state)
+//Note:  ()=> handleClick(isMorning) --> if clicked , then only this method gets executed
+
+// JSX Element
+const greetDataElement = isMorning ? <div>{data} <span onClick={()=> handleClick(isMorning)}>at 8am</span> </div> : <div>{data} at 6pm</div> ;
+// functional component
+const GreetComponent = () => 
+  <>
+    {greetDataElement} I am a JSX element and I basically reside inside the functional
+    component
+  </>;
+// <></> is fragment syntax in react
+// creating root element;
+const root3 = ReactDOM.createRoot(document.getElementById("root3"));
+// rendering the created root element 
+root3.render(<GreetComponent/>); //Here the  <GreetComponent/> tag is a self closing tag
+
+
+
+
 

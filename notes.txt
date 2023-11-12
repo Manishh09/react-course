@@ -48,3 +48,34 @@ HMR: Hot Module Reload - for example if you make any change in the js file / htm
 
 webpack will generate the bundle.js and injects it into index.html - you can see the developer tool while the app is running
 ____________________________________
+
+12/11/23:
+
+JSX: Javascript XML -
+- html like structure
+
+- ex: const div = <div className = "text">JSX</div> ; this line refers to the sJSX syntax 
+
+- React converts the JSX elements to react.element at runtime and renders into DOM when the JSX element passed into react.createRoot method
+
+- Avoids writing react.createElement everytime
+
+- API data will be binded to view using single curly brace syntax {}
+
+- Basically a react.element resides inside a functional component
+
+- Functional Component: A function that returns the react element of type React.JSX.element
+
+- Operations on react.element like + are not valid
+
+- A JSX element must be returned from a functional component ;
+    
+    - there shoould be no parent elements
+__________________________________________________________________
+
+Fragments: empty angular tags <></>
+
+- Wraps content inside a component 
+
+- Reserves no space in DOM
+__________________________________________________________________
